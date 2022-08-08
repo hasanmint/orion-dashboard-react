@@ -6,9 +6,11 @@ import NavbarTop from './NavbarTop';
 const ContentBody = () => {
     return (
         <>
-            <NavbarTop></NavbarTop>
-            <Container></Container>
-            <Footer></Footer>
+            <div class="content">
+                <NavbarTop></NavbarTop>
+                <Container></Container>
+                <Footer></Footer>
+            </div>
         </>
     );
 };

@@ -4,7 +4,10 @@ import ContentBody from './ContentBody';
 const ContentPage = () => {
     return (
         <>
-   <ContentBody></ContentBody>
+            <div class="content-page">
+                <ContentBody></ContentBody>
+
+            </div>
         </>
     );
 };
