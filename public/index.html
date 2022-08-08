@@ -22,12 +22,20 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React App</title>
+  <title>Orion-Dashboard-React</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap"
     rel="stylesheet">
+
+     <!-- third party css -->
+     <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+  
+
+     <!-- App css -->
+     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style"/>
 
 
 </head>
@@ -45,6 +53,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- bundle -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- third party js -->
+    <script src="assets/js/vendor/apexcharts.min.js"></script>
+    <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- third party js ends -->
+
+    <!-- demo app -->
+    <script src="assets/js/pages/demo.dashboard.js"></script>
 </body>
 
 </html>
