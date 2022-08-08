@@ -1,4 +1,156 @@
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p{
+  color: #5D858D;
+}
+
 body{
   font-family: 'Titillium Web', sans-serif;
+  background: #21202E;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.side-nav .side-nav-title {
+  padding: 12px 30px;
+  letter-spacing: .05em;
+  pointer-events: none;
+  cursor: default;
+  font-size: .6875rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.navbar-custom .topbar-menu .nav-link {
+  padding: 0;
+  color: #56BACA;
+  min-width: 32px;
+  display: block;
+  text-align: center;
+  margin: 0 10px;
+  position: relative;
+}
+
+.leftside-menu {
+  width: 260px;
+  z-index: 10;
+  bottom: 0;
+  position: fixed;
+  top: 0;
+  color: #FFFF;
+  padding-top: 70px;
+  background: linear-gradient(0deg, #0F0F1B 0%, #251829 100%);
+}
+
+.navbar-custom {
+  padding: 0 24px;
+  background-color: #151523;
+  -webkit-box-shadow: var(--ct-box-shadow);
+  box-shadow: var(--ct-box-shadow);
+  min-height: 70px;
+  position: fixed;
+  left: 260px;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+.help-box {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 65px 25px 25px;
+  position: relative;
+  background-color: #0F0F1B;
+}
+
+.nav-user {
+  padding: calc(31px * .5) 20px calc(31px * .5) 57px!important;
+  text-align: left!important;
+  position: relative;
+  background-color: #151523;
+  min-height: 70px;
+  border: none;
+}
+
+
+.app-search .form-control {
+
+  height: calc(1.5em + 0.9rem + 2px);
+  padding-left: 40px;
+  padding-right: 20px;
+  background-color: #2D3C41;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.side-nav .side-nav-link {
+  color:#56BACA;
+  display: block;
+  padding: 10px 30px;
+  font-size: .9375rem;
+  position: relative;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  list-style: none;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+ 
+  margin-right: auto;
+  margin-left: auto;
+  background: #21202E;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.5rem 1.5rem;
+  background: #21202E;
+}
+
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  background: #21202E;
+}
+
+.border-primary {
+  border-color: #56BACA!important;
+}
+
+.btn-primary {
+  background-color: #2D3C41;
+  border-color: #2D3C41;
+}
+
+.btn-primary:hover{
+  background-color: #56BACA;
+}
+
+.button-menu-mobile {
+  border: none;
+  color: #56BACA;
+  height: 70px;
+  line-height: 70px;
+  width: 60px;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  float: left;
+  z-index: 1;
+  position: relative;
+  margin-left: -24px;
 }

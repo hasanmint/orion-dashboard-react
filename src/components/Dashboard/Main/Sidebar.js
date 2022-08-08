@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     return (
@@ -14,15 +15,6 @@ const Sidebar = () => {
                 </a>
 
               
-                <a href="index.html" class="logo text-center logo-dark">
-                    <span class="logo-lg">
-                        <img src="assets/images/logo-dark.png" alt="" height="32" width="80"/>
-                    </span>
-                    <span class="logo-sm">
-                        <img src="assets/images/logo_sm_dark.png" alt="" height="16"/>
-                    </span>
-                </a>
-    
                 <div class="h-100" id="leftside-menu-container" data-simplebar>
 
                     <ul class="side-nav ">

@@ -6,7 +6,6 @@ const ContentPage = () => {
         <>
             <div class="content-page">
                 <ContentBody></ContentBody>
-
             </div>
         </>
     );
