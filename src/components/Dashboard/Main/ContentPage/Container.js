@@ -1,9 +1,12 @@
 import React from 'react';
+import TinyAreaChart from '../TinyAreaChart';
 
 const Container = () => {
     return (
         <>
             <div class="container-fluid">
+
+           
 
                 <div class="row">
                     <div class="col-12">
@@ -11,12 +14,21 @@ const Container = () => {
                             <div class="page-title-right">
                                 <form class="d-flex">
 
-                                    <a href="javascript: void(0);" class="btn btn-primary ms-2">
-                                        <i class="mdi mdi-autorenew"></i>
+                                  
+                                <a href="javascript: void(0);" class="btn btn-primary ms-1">
+                                      
+                                        <i class="mdi mdi-table-large"></i>
+                                        
                                     </a>
                                     <a href="javascript: void(0);" class="btn btn-primary ms-1">
-                                        <i class="mdi mdi-filter-variant"></i>
+                                        <i class="mdi mdi-view-module"></i>
+                                       
+                                        
                                     </a>
+                                    <a href="javascript: void(0);" class="btn btn-primary ms-2">
+                                    <i class="mdi mdi-chart-histogram"></i>
+                                    </a>
+
                                 </form>
                             </div>
                             <h4 class="page-title">DASHBOARD</h4>
@@ -26,15 +38,15 @@ const Container = () => {
                 {/* Row */}
 
                 <div class="row">
-                     <div class="col-md-6 col-xl-3">
+                    <div class="col-md-6 col-xl-3">
                         <div class="card">
                             <div class="card-body">
-                            <div class="float-end">
-                                           <span class="badge bg-success float-end">+35.7%</span>
-                                        </div>
+                                <div class="float-end">
+                                    <span class="badge bg-success float-end">+35.7%</span>
+                                </div>
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Customers">MEMBERS ONLINE</h5>
+                                        <h5 class="text-muted fw-normal mt-0" title="Number of Customers">MEMBERS ONLINE</h5>
                                         <h3 class="mt-3 mb-3">75,650</h3>
                                         <p class="mb-0 text-muted">
                                             <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> +35.7%</span>
@@ -49,13 +61,13 @@ const Container = () => {
                     <div class="col-md-6 col-xl-3">
                         <div class="card">
                             <div class="card-body">
-                            <div class="float-end">
-                            <i class="mdi mdi-cart-plus widget-icon"></i>
-                                            
-                                        </div>
+                                <div class="float-end">
+                                    <i class="mdi mdi-cart-plus widget-icon"></i>
+
+                                </div>
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Customers">STOCK LOAD </h5>
+                                        <h5 class="text-muted fw-normal mt-0" title="Number of Customers">STOCK LOAD </h5>
                                         <h3 class="mt-3 mb-3">54.9%</h3>
                                         <p class="mb-0 text-muted">
                                             <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 5.27%</span>
@@ -70,12 +82,12 @@ const Container = () => {
                     <div class="col-md-6 col-xl-3">
                         <div class="card">
                             <div class="card-body">
-                            <div class="float-end">
-                            <i class="mdi mdi-currency-usd widget-icon"></i>
-                                        </div>
+                                <div class="float-end">
+                                    <i class="mdi mdi-currency-usd widget-icon"></i>
+                                </div>
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Customers">SHIP COSTS</h5>
+                                        <h5 class="text-muted fw-normal mt-0" title="Number of Customers">SHIP COSTS</h5>
                                         <h3 class="mt-3 mb-3">$9,324,980</h3>
                                         <p class="mb-0 text-muted">
                                             <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 5.27% AVG</span>
@@ -90,12 +102,12 @@ const Container = () => {
                     <div class="col-md-6 col-xl-3">
                         <div class="card">
                             <div class="card-body">
-                            <div class="float-end">
-                                            <i class="mdi mdi-account-multiple widget-icon"></i>
-                                        </div>
+                                <div class="float-end">
+                                    <i class="mdi mdi-account-multiple widget-icon"></i>
+                                </div>
                                 <div class="row align-items-center">
                                     <div class="col-6">
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Customers">POPULATION</h5>
+                                        <h5 class="text-muted fw-normal mt-0" title="Number of Customers">POPULATION</h5>
                                         <h3 class="mt-3 mb-3">36,254</h3>
                                         <p class="mb-0 text-muted">
                                             <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i> 5.27%</span>
@@ -110,6 +122,74 @@ const Container = () => {
 
 
                 {/* Row */}
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    <h4 class="header-title">Campaigns</h4>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end">
+
+                                            <a href="javascript:void(0);" class="dropdown-item">Today</a>
+
+                                            <a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
+
+                                            <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
+
+                                            <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="row text-center mt-3">
+                                    <div class="col-sm-4">
+                                        <i class="mdi mdi-send widget-icon rounded-circle bg-light-lighten text-muted"></i>
+                                        <h3 class="fw-normal mt-3">
+                                            <span>6,510</span>
+                                        </h3>
+                                        <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-warning"></i> Total Sent</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <i class="mdi mdi-flag-variant widget-icon rounded-circle bg-light-lighten text-muted"></i>
+                                        <h3 class="fw-normal mt-3">
+                                            <span>3,487</span>
+                                        </h3>
+                                        <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-primary"></i> Reached</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <i class="mdi mdi-email-open widget-icon rounded-circle bg-light-lighten text-muted"></i>
+                                        <h3 class="fw-normal mt-3">
+                                            <span>1,568</span>
+                                        </h3>
+                                        <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-success"></i> Opened</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                               
+                           
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
                 <div class="row">
                     <div class="col-xl-5 col-lg-6">
@@ -214,7 +294,8 @@ const Container = () => {
                 </div>
                 {/* <!-- end row --> */}
 
-                
+
+
                 
             </div>
         </>
